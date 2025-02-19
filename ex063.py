@@ -1,0 +1,12 @@
+qtd = int(input("Escreva a quantidade de termos do fibonacci que você deseja ver: "))
+fibo = 0
+nacci = 1
+print("{} - {}".format(fibo,nacci), end= '')
+cont = 3
+while cont <= qtd:
+    seq = fibo + nacci
+    print(" - {} ".format(seq), end= '')
+    fibo = nacci
+    nacci = seq
+    cont += 1
+print("- FIM", end= '')
